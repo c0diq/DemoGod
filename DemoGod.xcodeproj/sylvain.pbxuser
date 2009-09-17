@@ -8,7 +8,7 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Release;
+		activeBuildConfigurationName = Debug;
 		activeExecutable = E43D82D40F853EED008F4034 /* DemoGod */;
 		activeTarget = 8D1107260486CEB800E47090 /* DemoGod */;
 		addToTargets = (
@@ -87,13 +87,22 @@
 					PBXFindDataSource_LocationID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 274865845;
-			PBXWorkspaceStateSaveDate = 274865845;
+			PBXPerProjectTemplateStateSaveDate = 274867485;
+			PBXWorkspaceStateSaveDate = 274867485;
 		};
 		perUserProjectItems = {
 			E43D83060F85415D008F4034 = E43D83060F85415D008F4034 /* PBXTextBookmark */;
 			E43D830A0F85415D008F4034 = E43D830A0F85415D008F4034 /* PlistBookmark */;
-			E4A3DBA210621ECB004F0475 /* PBXTextBookmark */ = E4A3DBA210621ECB004F0475 /* PBXTextBookmark */;
+			E4A3DBA210621ECB004F0475 = E4A3DBA210621ECB004F0475 /* PBXTextBookmark */;
+			E4A3DBF910622607004F0475 /* PBXTextBookmark */ = E4A3DBF910622607004F0475 /* PBXTextBookmark */;
+			E4A3DBFA10622607004F0475 /* PBXTextBookmark */ = E4A3DBFA10622607004F0475 /* PBXTextBookmark */;
+			E4A3DBFB10622607004F0475 /* PBXTextBookmark */ = E4A3DBFB10622607004F0475 /* PBXTextBookmark */;
+			E4A3DBFC10622607004F0475 /* PBXTextBookmark */ = E4A3DBFC10622607004F0475 /* PBXTextBookmark */;
+			E4A3DBFD10622607004F0475 /* PBXTextBookmark */ = E4A3DBFD10622607004F0475 /* PBXTextBookmark */;
+			E4A3DBFF10622617004F0475 /* PBXTextBookmark */ = E4A3DBFF10622617004F0475 /* PBXTextBookmark */;
+			E4A3DC0D1062262E004F0475 /* PBXTextBookmark */ = E4A3DC0D1062262E004F0475 /* PBXTextBookmark */;
+			E4A3DC1A10622679004F0475 /* PBXTextBookmark */ = E4A3DC1A10622679004F0475 /* PBXTextBookmark */;
+			E4A3DC1B1062267F004F0475 /* PBXTextBookmark */ = E4A3DC1B1062267F004F0475 /* PBXTextBookmark */;
 			E4A54DEF103917BA0051411A = E4A54DEF103917BA0051411A /* PBXTextBookmark */;
 			E4A54DF0103917BA0051411A = E4A54DF0103917BA0051411A /* PBXTextBookmark */;
 			E4A54DF1103917BA0051411A = E4A54DF1103917BA0051411A /* PBXTextBookmark */;
@@ -149,14 +158,14 @@
 	};
 	653FD62F0C20D46400F475B5 /* IPSController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1122, 1582}}";
-			sepNavSelRange = "{3272, 15}";
-			sepNavVisRange = "{2127, 1573}";
+			sepNavIntBoundsRect = "{{0, 0}, {816, 1498}}";
+			sepNavSelRange = "{1327, 81}";
+			sepNavVisRange = "{1111, 574}";
 		};
 	};
 	653FD6300C20D46400F475B5 /* IPSController.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1188, 6776}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1188, 6832}}";
 			sepNavSelRange = "{4491, 0}";
 			sepNavVisRange = "{2181, 2585}";
 			sepNavWindowFrame = "{{15, 89}, {1265, 784}}";
@@ -240,9 +249,9 @@
 	};
 	E4370CC00F8590E100497FE2 /* NptHttp.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1122, 8806}}";
-			sepNavSelRange = "{19586, 23}";
-			sepNavVisRange = "{19155, 1956}";
+			sepNavIntBoundsRect = "{{0, 0}, {816, 9730}}";
+			sepNavSelRange = "{26490, 0}";
+			sepNavVisRange = "{17765, 675}";
 		};
 	};
 	E4370CCE0F8590E100497FE2 /* NptResults.h */ = {
@@ -259,7 +268,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -305,7 +314,7 @@
 		ignoreCount = 0;
 		lineNumber = 206;
 		location = iPhoney;
-		modificationTime = 272277334.864026;
+		modificationTime = 274867791.330786;
 		state = 2;
 	};
 	E43D83060F85415D008F4034 /* PBXTextBookmark */ = {
@@ -343,7 +352,7 @@
 		ignoreCount = 0;
 		lineNumber = 176;
 		location = iPhoney;
-		modificationTime = 272277334.864128;
+		modificationTime = 274867791.330816;
 		state = 2;
 	};
 	E43D83530F8549DF008F4034 /* IPSWindow.m:141 */ = {
@@ -360,7 +369,7 @@
 		ignoreCount = 0;
 		lineNumber = 141;
 		location = iPhoney;
-		modificationTime = 272277334.864186;
+		modificationTime = 274867791.330833;
 		state = 2;
 	};
 	E43D836F0F854AC1008F4034 /* IPSWebContainerView.m:128 */ = {
@@ -377,10 +386,98 @@
 		ignoreCount = 0;
 		lineNumber = 128;
 		location = iPhoney;
-		modificationTime = 272277334.864256;
+		modificationTime = 274867791.330843;
 		state = 2;
 	};
 	E4A3DBA210621ECB004F0475 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 653FD6300C20D46400F475B5 /* IPSController.mm */;
+		name = "IPSController.mm: 109";
+		rLen = 0;
+		rLoc = 4491;
+		rType = 0;
+		vrLen = 2585;
+		vrLoc = 2181;
+	};
+	E4A3DBF910622607004F0475 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 653FD62F0C20D46400F475B5 /* IPSController.h */;
+		name = "IPSController.h: 38";
+		rLen = 81;
+		rLoc = 1327;
+		rType = 0;
+		vrLen = 697;
+		vrLoc = 1111;
+	};
+	E4A3DBFA10622607004F0475 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: 'NPT_DataBuffer NPT_HttpStaticRequestHandler::m_Buffer' is private";
+		fRef = E4370CC00F8590E100497FE2 /* NptHttp.h */;
+		rLen = 1;
+		rLoc = 488;
+		rType = 1;
+	};
+	E4A3DBFB10622607004F0475 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4370CC00F8590E100497FE2 /* NptHttp.h */;
+		name = "NptHttp.h: 489";
+		rLen = 29;
+		rLoc = 18931;
+		rType = 0;
+		vrLen = 620;
+		vrLoc = 18621;
+	};
+	E4A3DBFC10622607004F0475 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 653FD62F0C20D46400F475B5 /* IPSController.h */;
+		name = "IPSController.h: 38";
+		rLen = 81;
+		rLoc = 1327;
+		rType = 0;
+		vrLen = 697;
+		vrLoc = 1111;
+	};
+	E4A3DBFD10622607004F0475 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4370CC00F8590E100497FE2 /* NptHttp.h */;
+		name = "NptHttp.h: 699";
+		rLen = 0;
+		rLoc = 26490;
+		rType = 0;
+		vrLen = 675;
+		vrLoc = 17765;
+	};
+	E4A3DBFF10622617004F0475 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 653FD6300C20D46400F475B5 /* IPSController.mm */;
+		name = "IPSController.mm: 109";
+		rLen = 0;
+		rLoc = 4491;
+		rType = 0;
+		vrLen = 2526;
+		vrLoc = 2181;
+	};
+	E4A3DC0D1062262E004F0475 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 653FD62F0C20D46400F475B5 /* IPSController.h */;
+		name = "IPSController.h: 38";
+		rLen = 81;
+		rLoc = 1327;
+		rType = 0;
+		vrLen = 574;
+		vrLoc = 1111;
+	};
+	E4A3DC1A10622679004F0475 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 653FD62F0C20D46400F475B5 /* IPSController.h */;
+		name = "IPSController.h: 38";
+		rLen = 81;
+		rLoc = 1327;
+		rType = 0;
+		vrLen = 574;
+		vrLoc = 1111;
+	};
+	E4A3DC1B1062267F004F0475 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 653FD6300C20D46400F475B5 /* IPSController.mm */;
 		name = "IPSController.mm: 109";
@@ -404,7 +501,7 @@
 		ignoreCount = 0;
 		lineNumber = 99;
 		location = DemoGod;
-		modificationTime = 272277334.8670961;
+		modificationTime = 274867791.332213;
 		state = 2;
 	};
 	E4A54DEE103917B80051411A /* IPSController.mm:108 */ = {
@@ -420,7 +517,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 108;
-		modificationTime = 272277334.867263;
+		modificationTime = 274867791.332292;
 		state = 2;
 	};
 	E4A54DEF103917BA0051411A /* PBXTextBookmark */ = {
@@ -577,7 +674,7 @@
 		ignoreCount = 0;
 		lineNumber = 278;
 		location = DemoGod;
-		modificationTime = 272277334.867396;
+		modificationTime = 274867791.33237;
 		state = 2;
 	};
 	E4A54E1C103918EC0051411A /* IPSController.mm:306 */ = {
@@ -594,7 +691,7 @@
 		ignoreCount = 0;
 		lineNumber = 306;
 		location = DemoGod;
-		modificationTime = 272277334.8675081;
+		modificationTime = 274867791.332434;
 		state = 2;
 	};
 	E4A54E1F103919C70051411A /* IPSController.mm:211 */ = {
@@ -611,7 +708,7 @@
 		ignoreCount = 0;
 		lineNumber = 211;
 		location = DemoGod;
-		modificationTime = 272277334.8676161;
+		modificationTime = 274867791.332504;
 		state = 1;
 	};
 	E4A54E3A10391C0E0051411A /* IPSController.mm:41 */ = {
@@ -628,7 +725,7 @@
 		ignoreCount = 0;
 		lineNumber = 41;
 		location = DemoGod;
-		modificationTime = 272277334.8677281;
+		modificationTime = 274867791.332568;
 		state = 2;
 	};
 	E4A54E3C10391C150051411A /* PBXTextBookmark */ = {
@@ -770,7 +867,7 @@
 		ignoreCount = 0;
 		lineNumber = 372;
 		location = DemoGod;
-		modificationTime = 272277334.866991;
+		modificationTime = 274867791.332141;
 		state = 2;
 	};
 	E4A598610F85EF5300F9D8C0 /* PBXTextBookmark */ = {
@@ -897,7 +994,7 @@
 		ignoreCount = 0;
 		lineNumber = 390;
 		location = DemoGod;
-		modificationTime = 272277334.864313;
+		modificationTime = 274867791.330853;
 		state = 2;
 	};
 	E4E0DF7F0F8597A800653B9D /* IPSController.mm:297 */ = {
@@ -914,7 +1011,7 @@
 		ignoreCount = 0;
 		lineNumber = 297;
 		location = DemoGod;
-		modificationTime = 272277334.86492;
+		modificationTime = 274867791.330975;
 		state = 2;
 	};
 	E4E0DF8B0F8599F300653B9D /* IPSController.mm:378 */ = {
@@ -931,7 +1028,7 @@
 		ignoreCount = 0;
 		lineNumber = 378;
 		location = DemoGod;
-		modificationTime = 272277334.865259;
+		modificationTime = 274867791.331055;
 		state = 2;
 	};
 	E4E0DFAA0F859AD600653B9D /* IPSController.mm:285 */ = {
@@ -948,7 +1045,7 @@
 		ignoreCount = 0;
 		lineNumber = 285;
 		location = DemoGod;
-		modificationTime = 272277334.8653899;
+		modificationTime = 274867791.331119;
 		state = 2;
 	};
 	E4E0DFAC0F859B0200653B9D /* IPSController.mm:368 */ = {
@@ -965,7 +1062,7 @@
 		ignoreCount = 0;
 		lineNumber = 368;
 		location = DemoGod;
-		modificationTime = 272277334.865502;
+		modificationTime = 274867791.331183;
 		state = 2;
 	};
 	E4E0DFB30F859C6100653B9D /* IPSController.mm:301 */ = {
@@ -982,7 +1079,7 @@
 		ignoreCount = 0;
 		lineNumber = 301;
 		location = DemoGod;
-		modificationTime = 272277334.86561;
+		modificationTime = 274867791.331254;
 		state = 2;
 	};
 	E4E0DFEC0F85A5B500653B9D /* IPSController.mm:91 */ = {
@@ -999,7 +1096,7 @@
 		ignoreCount = 0;
 		lineNumber = 91;
 		location = DemoGod;
-		modificationTime = 272277334.865718;
+		modificationTime = 274867791.331324;
 		state = 2;
 	};
 	E4E0E0210F85B64E00653B9D /* PBXTextBookmark */ = {
@@ -1063,7 +1160,7 @@
 		ignoreCount = 0;
 		lineNumber = 138;
 		location = DemoGod;
-		modificationTime = 272277334.865849;
+		modificationTime = 274867791.331423;
 		state = 2;
 	};
 	E4E0E0B50F85CC8500653B9D /* IPSController.mm:84 */ = {
@@ -1080,7 +1177,7 @@
 		ignoreCount = 0;
 		lineNumber = 84;
 		location = DemoGod;
-		modificationTime = 272277334.865958;
+		modificationTime = 274867791.33149;
 		state = 2;
 	};
 	E4E0E0CC0F85D30200653B9D /* IPSController.mm:103 */ = {
@@ -1097,7 +1194,7 @@
 		ignoreCount = 0;
 		lineNumber = 103;
 		location = DemoGod;
-		modificationTime = 272277334.866082;
+		modificationTime = 274867791.331572;
 		state = 2;
 	};
 	E4E0E0E40F85D32A00653B9D /* IPSController.mm:103 */ = {
@@ -1114,7 +1211,7 @@
 		ignoreCount = 0;
 		lineNumber = 103;
 		location = DemoGod;
-		modificationTime = 272277334.866216;
+		modificationTime = 274867791.331654;
 		state = 2;
 	};
 	E4E0E0ED0F85D3D500653B9D /* IPSController.mm:131 */ = {
@@ -1131,7 +1228,7 @@
 		ignoreCount = 0;
 		lineNumber = 131;
 		location = DemoGod;
-		modificationTime = 272277334.866355;
+		modificationTime = 274867791.331737;
 		state = 2;
 	};
 	E4E0E0EF0F85D3F400653B9D /* IPSController.mm:367 */ = {
@@ -1148,7 +1245,7 @@
 		ignoreCount = 0;
 		lineNumber = 367;
 		location = DemoGod;
-		modificationTime = 272277334.866468;
+		modificationTime = 274867791.331808;
 		state = 2;
 	};
 	E4E0E10B0F85D86800653B9D /* IPSController.mm:371 */ = {
@@ -1165,7 +1262,7 @@
 		ignoreCount = 0;
 		lineNumber = 371;
 		location = DemoGod;
-		modificationTime = 272277334.866578;
+		modificationTime = 274867791.331879;
 		state = 2;
 	};
 	E4E0E11A0F85DBDC00653B9D /* IPSController.mm:377 */ = {
@@ -1182,7 +1279,7 @@
 		ignoreCount = 0;
 		lineNumber = 377;
 		location = DemoGod;
-		modificationTime = 272277334.866698;
+		modificationTime = 274867791.331943;
 		state = 2;
 	};
 	E4E0E1380F85DF9D00653B9D /* IPSController.mm:386 */ = {
@@ -1199,7 +1296,7 @@
 		ignoreCount = 0;
 		lineNumber = 386;
 		location = DemoGod;
-		modificationTime = 272277334.8668081;
+		modificationTime = 274867791.332007;
 		state = 2;
 	};
 	E4E0E1630F85E60400653B9D /* IPSWebContainerView.m:341 */ = {
@@ -1216,7 +1313,7 @@
 		ignoreCount = 0;
 		lineNumber = 341;
 		location = DemoGod;
-		modificationTime = 272277334.866915;
+		modificationTime = 274867791.33207;
 		state = 2;
 	};
 	E4E0E1650F85E60500653B9D /* IPSWebContainerView.m:348 */ = {
@@ -1233,7 +1330,7 @@
 		ignoreCount = 0;
 		lineNumber = 348;
 		location = DemoGod;
-		modificationTime = 272277334.866932;
+		modificationTime = 274867791.332088;
 		state = 2;
 	};
 	E4E0E1770F85E6EA00653B9D /* IPSWebContainerView.m:351 */ = {
@@ -1250,7 +1347,7 @@
 		ignoreCount = 0;
 		lineNumber = 351;
 		location = DemoGod;
-		modificationTime = 272277334.8669469;
+		modificationTime = 274867791.332104;
 		state = 2;
 	};
 	E4E0E1790F85E6EB00653B9D /* IPSWebContainerView.m:349 */ = {
@@ -1267,7 +1364,7 @@
 		ignoreCount = 0;
 		lineNumber = 349;
 		location = DemoGod;
-		modificationTime = 272277334.866962;
+		modificationTime = 274867791.332114;
 		state = 2;
 	};
 	E4E0E17B0F85E6EC00653B9D /* IPSWebContainerView.m:342 */ = {
@@ -1284,7 +1381,7 @@
 		ignoreCount = 0;
 		lineNumber = 342;
 		location = DemoGod;
-		modificationTime = 272277334.866976;
+		modificationTime = 274867791.33213;
 		state = 2;
 	};
 	FCF94BFD0C25B3CF00F78F31 /* IPSStatusBarView.h */ = {

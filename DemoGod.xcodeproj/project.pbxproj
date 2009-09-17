@@ -69,6 +69,7 @@
 		E4370D9B0F8590E100497FE2 /* NptStdcDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D110F8590E100497FE2 /* NptStdcDebug.cpp */; };
 		E4370D9C0F8590E100497FE2 /* NptStdcEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D120F8590E100497FE2 /* NptStdcEnvironment.cpp */; };
 		E4370D9D0F8590E100497FE2 /* NptStdcFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D130F8590E100497FE2 /* NptStdcFile.cpp */; };
+		E4A3DC261062277E004F0475 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A3DC251062277E004F0475 /* Sparkle.framework */; };
 		E4E0E04A0F85B8DF00653B9D /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = E4E0E0490F85B8DF00653B9D /* home.html */; };
 		FC72B03D0C2649DB00A26466 /* IPSStatusBarWifiNone.tif in Resources */ = {isa = PBXBuildFile; fileRef = FC72B0380C2649DB00A26466 /* IPSStatusBarWifiNone.tif */; };
 		FC72B03E0C2649DB00A26466 /* IPSStatusBarWifiFull.tif in Resources */ = {isa = PBXBuildFile; fileRef = FC72B0390C2649DB00A26466 /* IPSStatusBarWifiFull.tif */; };
@@ -230,6 +231,7 @@
 		E4370D110F8590E100497FE2 /* NptStdcDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStdcDebug.cpp; sourceTree = "<group>"; };
 		E4370D120F8590E100497FE2 /* NptStdcEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStdcEnvironment.cpp; sourceTree = "<group>"; };
 		E4370D130F8590E100497FE2 /* NptStdcFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStdcFile.cpp; sourceTree = "<group>"; };
+		E4A3DC251062277E004F0475 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		E4E0E0490F85B8DF00653B9D /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 		FC72B0380C2649DB00A26466 /* IPSStatusBarWifiNone.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSStatusBarWifiNone.tif; sourceTree = "<group>"; };
 		FC72B0390C2649DB00A26466 /* IPSStatusBarWifiFull.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSStatusBarWifiFull.tif; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				FCF94F400C25C97500F78F31 /* WebKit.framework in Frameworks */,
 				BBBE65400C281A6D008DC24C /* Quartz.framework in Frameworks */,
+				E4A3DC261062277E004F0475 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +318,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4A3DC251062277E004F0475 /* Sparkle.framework */,
 				FCF94F3F0C25C97500F78F31 /* WebKit.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
@@ -761,8 +765,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = DemoGod;
@@ -777,8 +783,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = DemoGod;
 				WRAPPER_EXTENSION = app;
