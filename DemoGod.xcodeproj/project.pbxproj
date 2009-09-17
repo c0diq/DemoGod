@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		653FD6310C20D46400F475B5 /* IPSController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 653FD6300C20D46400F475B5 /* IPSController.mm */; };
+		653FD6370C20D47900F475B5 /* IPSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 653FD6360C20D47900F475B5 /* IPSWindow.m */; };
+		653FDF3B0C233E2F00F475B5 /* IPSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 653FDF3A0C233E2F00F475B5 /* IPSView.m */; };
+		653FDF9B0C2340C800F475B5 /* IPSCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 653FDF9A0C2340C800F475B5 /* IPSCategories.m */; };
+		653FE2010C23424F00F475B5 /* IPSIPhone_Portrait.tif in Resources */ = {isa = PBXBuildFile; fileRef = 653FE2000C23424F00F475B5 /* IPSIPhone_Portrait.tif */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A3963BBF0C318E7100450806 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3963BBE0C318E7100450806 /* UserDefaults.plist */; };
+		A3963BC30C318E9D00450806 /* IPSWebAddressBarLoadingBackground.tif in Resources */ = {isa = PBXBuildFile; fileRef = A3963BC00C318E9D00450806 /* IPSWebAddressBarLoadingBackground.tif */; };
+		A3963BC40C318E9D00450806 /* IPSWebAddressFieldLoadingLeftCap.tif in Resources */ = {isa = PBXBuildFile; fileRef = A3963BC10C318E9D00450806 /* IPSWebAddressFieldLoadingLeftCap.tif */; };
+		A3963BC50C318E9D00450806 /* IPSWebAddressFieldLoadingRightCap.tif in Resources */ = {isa = PBXBuildFile; fileRef = A3963BC20C318E9D00450806 /* IPSWebAddressFieldLoadingRightCap.tif */; };
+		BB14E25F0C303C6100687DD2 /* IPSScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = BB14E25E0C303C6100687DD2 /* IPSScroller.m */; };
+		BB1F75080C31DCE60046A2D9 /* IPSIPhone.tif in Resources */ = {isa = PBXBuildFile; fileRef = BB1F75060C31DCE60046A2D9 /* IPSIPhone.tif */; };
+		BB1F75090C31DCE60046A2D9 /* IPSWebAddressBarStopButton.tif in Resources */ = {isa = PBXBuildFile; fileRef = BB1F75070C31DCE60046A2D9 /* IPSWebAddressBarStopButton.tif */; };
+		BB25A5F30C2AD4FA0034C5B1 /* iPhoneCompositionToP.qtz in Resources */ = {isa = PBXBuildFile; fileRef = BB25A5F20C2AD4FA0034C5B1 /* iPhoneCompositionToP.qtz */; };
+		BBBE65400C281A6D008DC24C /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBE653F0C281A6D008DC24C /* Quartz.framework */; };
+		BBBE65B60C282439008DC24C /* IPSAnimationWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBE65B50C282439008DC24C /* IPSAnimationWindow.m */; };
+		BBBE679E0C2829DA008DC24C /* iPhoneComposition.qtz in Resources */ = {isa = PBXBuildFile; fileRef = BBBE679D0C2829DA008DC24C /* iPhoneComposition.qtz */; };
+		E4370D650F8590E100497FE2 /* Neptune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CA90F8590E100497FE2 /* Neptune.cpp */; };
+		E4370D660F8590E100497FE2 /* NptBase64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CAC0F8590E100497FE2 /* NptBase64.cpp */; };
+		E4370D670F8590E100497FE2 /* NptBufferedStreams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CAE0F8590E100497FE2 /* NptBufferedStreams.cpp */; };
+		E4370D680F8590E100497FE2 /* NptCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CB00F8590E100497FE2 /* NptCommon.cpp */; };
+		E4370D690F8590E100497FE2 /* NptConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CB30F8590E100497FE2 /* NptConsole.cpp */; };
+		E4370D6A0F8590E100497FE2 /* NptDataBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CB60F8590E100497FE2 /* NptDataBuffer.cpp */; };
+		E4370D6B0F8590E100497FE2 /* NptDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CB80F8590E100497FE2 /* NptDebug.cpp */; };
+		E4370D6C0F8590E100497FE2 /* NptDynamicLibraries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CBB0F8590E100497FE2 /* NptDynamicLibraries.cpp */; };
+		E4370D6D0F8590E100497FE2 /* NptFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CBD0F8590E100497FE2 /* NptFile.cpp */; };
+		E4370D6E0F8590E100497FE2 /* NptHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CBF0F8590E100497FE2 /* NptHttp.cpp */; };
+		E4370D6F0F8590E100497FE2 /* NptList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CC20F8590E100497FE2 /* NptList.cpp */; };
+		E4370D700F8590E100497FE2 /* NptMessaging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CC60F8590E100497FE2 /* NptMessaging.cpp */; };
+		E4370D710F8590E100497FE2 /* NptNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CC80F8590E100497FE2 /* NptNetwork.cpp */; };
+		E4370D720F8590E100497FE2 /* NptQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CCA0F8590E100497FE2 /* NptQueue.cpp */; };
+		E4370D730F8590E100497FE2 /* NptResults.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CCD0F8590E100497FE2 /* NptResults.cpp */; };
+		E4370D740F8590E100497FE2 /* NptRingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CCF0F8590E100497FE2 /* NptRingBuffer.cpp */; };
+		E4370D750F8590E100497FE2 /* NptSimpleMessageQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CD30F8590E100497FE2 /* NptSimpleMessageQueue.cpp */; };
+		E4370D760F8590E100497FE2 /* NptSockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CD50F8590E100497FE2 /* NptSockets.cpp */; };
+		E4370D770F8590E100497FE2 /* NptStreams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CD80F8590E100497FE2 /* NptStreams.cpp */; };
+		E4370D780F8590E100497FE2 /* NptStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CDA0F8590E100497FE2 /* NptStrings.cpp */; };
+		E4370D790F8590E100497FE2 /* NptSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CDC0F8590E100497FE2 /* NptSystem.cpp */; };
+		E4370D7A0F8590E100497FE2 /* NptThreads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CDE0F8590E100497FE2 /* NptThreads.cpp */; };
+		E4370D7B0F8590E100497FE2 /* NptTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CE00F8590E100497FE2 /* NptTime.cpp */; };
+		E4370D7C0F8590E100497FE2 /* NptTls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CE20F8590E100497FE2 /* NptTls.cpp */; };
+		E4370D7D0F8590E100497FE2 /* NptUri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CE50F8590E100497FE2 /* NptUri.cpp */; };
+		E4370D7E0F8590E100497FE2 /* NptUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CE70F8590E100497FE2 /* NptUtils.cpp */; };
+		E4370D7F0F8590E100497FE2 /* NptXml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CEA0F8590E100497FE2 /* NptXml.cpp */; };
+		E4370D800F8590E100497FE2 /* NptZip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CEC0F8590E100497FE2 /* NptZip.cpp */; };
+		E4370D810F8590E100497FE2 /* NptLogging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CEE0F8590E100497FE2 /* NptLogging.cpp */; };
+		E4370D820F8590E100497FE2 /* NptBsdNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CF10F8590E100497FE2 /* NptBsdNetwork.cpp */; };
+		E4370D830F8590E100497FE2 /* NptBsdSockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CF20F8590E100497FE2 /* NptBsdSockets.cpp */; };
+		E4370D8C0F8590E100497FE2 /* NptPosixDynamicLibraries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370CFF0F8590E100497FE2 /* NptPosixDynamicLibraries.cpp */; };
+		E4370D8D0F8590E100497FE2 /* NptPosixNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D000F8590E100497FE2 /* NptPosixNetwork.cpp */; };
+		E4370D8E0F8590E100497FE2 /* NptPosixQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D010F8590E100497FE2 /* NptPosixQueue.cpp */; };
+		E4370D8F0F8590E100497FE2 /* NptPosixSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D020F8590E100497FE2 /* NptPosixSystem.cpp */; };
+		E4370D900F8590E100497FE2 /* NptPosixThreads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D030F8590E100497FE2 /* NptPosixThreads.cpp */; };
+		E4370D910F8590E100497FE2 /* NptSelectableMessageQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D040F8590E100497FE2 /* NptSelectableMessageQueue.cpp */; };
+		E4370D920F8590E100497FE2 /* NptPosixFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D050F8590E100497FE2 /* NptPosixFile.cpp */; };
+		E4370D9A0F8590E100497FE2 /* NptStdcConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D100F8590E100497FE2 /* NptStdcConsole.cpp */; };
+		E4370D9B0F8590E100497FE2 /* NptStdcDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D110F8590E100497FE2 /* NptStdcDebug.cpp */; };
+		E4370D9C0F8590E100497FE2 /* NptStdcEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D120F8590E100497FE2 /* NptStdcEnvironment.cpp */; };
+		E4370D9D0F8590E100497FE2 /* NptStdcFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4370D130F8590E100497FE2 /* NptStdcFile.cpp */; };
+		E4E0E04A0F85B8DF00653B9D /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = E4E0E0490F85B8DF00653B9D /* home.html */; };
+		FC72B03D0C2649DB00A26466 /* IPSStatusBarWifiNone.tif in Resources */ = {isa = PBXBuildFile; fileRef = FC72B0380C2649DB00A26466 /* IPSStatusBarWifiNone.tif */; };
+		FC72B03E0C2649DB00A26466 /* IPSStatusBarWifiFull.tif in Resources */ = {isa = PBXBuildFile; fileRef = FC72B0390C2649DB00A26466 /* IPSStatusBarWifiFull.tif */; };
+		FC72B03F0C2649DB00A26466 /* IPSStatusBarServiceFull.tif in Resources */ = {isa = PBXBuildFile; fileRef = FC72B03A0C2649DB00A26466 /* IPSStatusBarServiceFull.tif */; };
+		FC72B0400C2649DB00A26466 /* IPSStatusBarServiceNone.tif in Resources */ = {isa = PBXBuildFile; fileRef = FC72B03B0C2649DB00A26466 /* IPSStatusBarServiceNone.tif */; };
+		FC72B0410C2649DB00A26466 /* IPSStatusBarBatteryFull.tif in Resources */ = {isa = PBXBuildFile; fileRef = FC72B03C0C2649DB00A26466 /* IPSStatusBarBatteryFull.tif */; };
+		FC72D10A0C28DE6400A26466 /* IPSIPhone_Landscape.tif in Resources */ = {isa = PBXBuildFile; fileRef = FC72D1090C28DE6400A26466 /* IPSIPhone_Landscape.tif */; };
+		FCF94BFF0C25B3CF00F78F31 /* IPSStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF94BFE0C25B3CF00F78F31 /* IPSStatusBarView.m */; };
+		FCF94E5A0C25B71700F78F31 /* IPSScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF94E590C25B71700F78F31 /* IPSScreenView.m */; };
+		FCF94E7A0C25BE1D00F78F31 /* IPSWebContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF94E790C25BE1D00F78F31 /* IPSWebContainerView.m */; };
+		FCF94E9D0C25C26D00F78F31 /* IPSWebAddressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF94E9C0C25C26D00F78F31 /* IPSWebAddressBarView.m */; };
+		FCF94EA30C25C30700F78F31 /* IPSWebAddressBarBackground.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF94EA20C25C30700F78F31 /* IPSWebAddressBarBackground.tif */; };
+		FCF94EA50C25C33C00F78F31 /* IPSStatusBarWebBackground.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF94EA40C25C33C00F78F31 /* IPSStatusBarWebBackground.tif */; };
+		FCF94ED50C25C41000F78F31 /* IPSWebToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF94ED40C25C41000F78F31 /* IPSWebToolbarView.m */; };
+		FCF94ED70C25C43600F78F31 /* IPSWebToolbarBackground.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF94ED60C25C43600F78F31 /* IPSWebToolbarBackground.tif */; };
+		FCF94F400C25C97500F78F31 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF94F3F0C25C97500F78F31 /* WebKit.framework */; };
+		FCF951A40C25EDF600F78F31 /* IPSWebAddressBarPlusButton.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF951A30C25EDF600F78F31 /* IPSWebAddressBarPlusButton.tif */; };
+		FCF951FE0C25EF6000F78F31 /* IPSWebAddressBarReloadButton.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF951FD0C25EF6000F78F31 /* IPSWebAddressBarReloadButton.tif */; };
+		FCF953230C25F33F00F78F31 /* IPSWebAddressField.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF953220C25F33F00F78F31 /* IPSWebAddressField.m */; };
+		FCF9539C0C25F8D400F78F31 /* IPSWebAddressFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF9539B0C25F8D400F78F31 /* IPSWebAddressFieldCell.m */; };
+		FCF954230C25FD3700F78F31 /* IPSWebAddressFieldBackground.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF954220C25FD3700F78F31 /* IPSWebAddressFieldBackground.tif */; };
+		FCF954560C25FF0000F78F31 /* IPSWebAddressFieldLeftCap.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF954550C25FF0000F78F31 /* IPSWebAddressFieldLeftCap.tif */; };
+		FCF954580C25FF0B00F78F31 /* IPSWebAddressFieldRightCap.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF954570C25FF0B00F78F31 /* IPSWebAddressFieldRightCap.tif */; };
+		FCF954920C26029800F78F31 /* IPSIPhoneOffIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = FCF954910C26029800F78F31 /* IPSIPhoneOffIcon.icns */; };
+		FCF954940C2602AA00F78F31 /* IPSIPhoneOnIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = FCF954930C2602AA00F78F31 /* IPSIPhoneOnIcon.icns */; };
+		FCF954CA0C2603D700F78F31 /* IPSApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF954C90C2603D700F78F31 /* IPSApplication.m */; };
+		FCF955D40C261ED000F78F31 /* IPSWebToolbarForwardButton.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF955D00C261ED000F78F31 /* IPSWebToolbarForwardButton.tif */; };
+		FCF955D50C261ED000F78F31 /* IPSWebToolbarBookmarksButton.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF955D10C261ED000F78F31 /* IPSWebToolbarBookmarksButton.tif */; };
+		FCF955D60C261ED000F78F31 /* IPSWebToolbarScreensButton.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF955D20C261ED000F78F31 /* IPSWebToolbarScreensButton.tif */; };
+		FCF955D70C261ED000F78F31 /* IPSWebToolbarBackButton.tif in Resources */ = {isa = PBXBuildFile; fileRef = FCF955D30C261ED000F78F31 /* IPSWebToolbarBackButton.tif */; };
+		FCF956020C26204A00F78F31 /* IPSWebAddressBarTitleField.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF956010C26204A00F78F31 /* IPSWebAddressBarTitleField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A33BF4850C31DE9500A2C4A7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* iPhoney_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoney_Prefix.pch; sourceTree = "<group>"; };
+		653FD62F0C20D46400F475B5 /* IPSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSController.h; sourceTree = "<group>"; };
+		653FD6300C20D46400F475B5 /* IPSController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IPSController.mm; sourceTree = "<group>"; };
+		653FD6350C20D47900F475B5 /* IPSWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSWindow.h; sourceTree = "<group>"; };
+		653FD6360C20D47900F475B5 /* IPSWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSWindow.m; sourceTree = "<group>"; };
+		653FDF390C233E2F00F475B5 /* IPSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSView.h; sourceTree = "<group>"; };
+		653FDF3A0C233E2F00F475B5 /* IPSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSView.m; sourceTree = "<group>"; };
+		653FDF990C2340C800F475B5 /* IPSCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSCategories.h; sourceTree = "<group>"; };
+		653FDF9A0C2340C800F475B5 /* IPSCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSCategories.m; sourceTree = "<group>"; };
+		653FE2000C23424F00F475B5 /* IPSIPhone_Portrait.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSIPhone_Portrait.tif; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* DemoGod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoGod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3963BBE0C318E7100450806 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
+		A3963BC00C318E9D00450806 /* IPSWebAddressBarLoadingBackground.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebAddressBarLoadingBackground.tif; sourceTree = "<group>"; };
+		A3963BC10C318E9D00450806 /* IPSWebAddressFieldLoadingLeftCap.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebAddressFieldLoadingLeftCap.tif; sourceTree = "<group>"; };
+		A3963BC20C318E9D00450806 /* IPSWebAddressFieldLoadingRightCap.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebAddressFieldLoadingRightCap.tif; sourceTree = "<group>"; };
+		BB14E25D0C303C6100687DD2 /* IPSScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSScroller.h; sourceTree = "<group>"; };
+		BB14E25E0C303C6100687DD2 /* IPSScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSScroller.m; sourceTree = "<group>"; };
+		BB1F75060C31DCE60046A2D9 /* IPSIPhone.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSIPhone.tif; sourceTree = "<group>"; };
+		BB1F75070C31DCE60046A2D9 /* IPSWebAddressBarStopButton.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebAddressBarStopButton.tif; sourceTree = "<group>"; };
+		BB25A5F20C2AD4FA0034C5B1 /* iPhoneCompositionToP.qtz */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = iPhoneCompositionToP.qtz; sourceTree = "<group>"; };
+		BBBE653F0C281A6D008DC24C /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		BBBE65B40C282439008DC24C /* IPSAnimationWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSAnimationWindow.h; sourceTree = "<group>"; };
+		BBBE65B50C282439008DC24C /* IPSAnimationWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSAnimationWindow.m; sourceTree = "<group>"; };
+		BBBE679D0C2829DA008DC24C /* iPhoneComposition.qtz */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = iPhoneComposition.qtz; sourceTree = "<group>"; };
+		E4370CA90F8590E100497FE2 /* Neptune.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Neptune.cpp; sourceTree = "<group>"; };
+		E4370CAA0F8590E100497FE2 /* Neptune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neptune.h; sourceTree = "<group>"; };
+		E4370CAB0F8590E100497FE2 /* NptArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptArray.h; sourceTree = "<group>"; };
+		E4370CAC0F8590E100497FE2 /* NptBase64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptBase64.cpp; sourceTree = "<group>"; };
+		E4370CAD0F8590E100497FE2 /* NptBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptBase64.h; sourceTree = "<group>"; };
+		E4370CAE0F8590E100497FE2 /* NptBufferedStreams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptBufferedStreams.cpp; sourceTree = "<group>"; };
+		E4370CAF0F8590E100497FE2 /* NptBufferedStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptBufferedStreams.h; sourceTree = "<group>"; };
+		E4370CB00F8590E100497FE2 /* NptCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptCommon.cpp; sourceTree = "<group>"; };
+		E4370CB10F8590E100497FE2 /* NptCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptCommon.h; sourceTree = "<group>"; };
+		E4370CB20F8590E100497FE2 /* NptConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptConfig.h; sourceTree = "<group>"; };
+		E4370CB30F8590E100497FE2 /* NptConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptConsole.cpp; sourceTree = "<group>"; };
+		E4370CB40F8590E100497FE2 /* NptConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptConsole.h; sourceTree = "<group>"; };
+		E4370CB50F8590E100497FE2 /* NptConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptConstants.h; sourceTree = "<group>"; };
+		E4370CB60F8590E100497FE2 /* NptDataBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptDataBuffer.cpp; sourceTree = "<group>"; };
+		E4370CB70F8590E100497FE2 /* NptDataBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptDataBuffer.h; sourceTree = "<group>"; };
+		E4370CB80F8590E100497FE2 /* NptDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptDebug.cpp; sourceTree = "<group>"; };
+		E4370CB90F8590E100497FE2 /* NptDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptDebug.h; sourceTree = "<group>"; };
+		E4370CBA0F8590E100497FE2 /* NptDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptDefs.h; sourceTree = "<group>"; };
+		E4370CBB0F8590E100497FE2 /* NptDynamicLibraries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptDynamicLibraries.cpp; sourceTree = "<group>"; };
+		E4370CBC0F8590E100497FE2 /* NptDynamicLibraries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptDynamicLibraries.h; sourceTree = "<group>"; };
+		E4370CBD0F8590E100497FE2 /* NptFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptFile.cpp; sourceTree = "<group>"; };
+		E4370CBE0F8590E100497FE2 /* NptFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptFile.h; sourceTree = "<group>"; };
+		E4370CBF0F8590E100497FE2 /* NptHttp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptHttp.cpp; sourceTree = "<group>"; };
+		E4370CC00F8590E100497FE2 /* NptHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptHttp.h; sourceTree = "<group>"; };
+		E4370CC10F8590E100497FE2 /* NptInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptInterfaces.h; sourceTree = "<group>"; };
+		E4370CC20F8590E100497FE2 /* NptList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptList.cpp; sourceTree = "<group>"; };
+		E4370CC30F8590E100497FE2 /* NptList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptList.h; sourceTree = "<group>"; };
+		E4370CC40F8590E100497FE2 /* NptLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptLogging.h; sourceTree = "<group>"; };
+		E4370CC50F8590E100497FE2 /* NptMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptMap.h; sourceTree = "<group>"; };
+		E4370CC60F8590E100497FE2 /* NptMessaging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptMessaging.cpp; sourceTree = "<group>"; };
+		E4370CC70F8590E100497FE2 /* NptMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptMessaging.h; sourceTree = "<group>"; };
+		E4370CC80F8590E100497FE2 /* NptNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptNetwork.cpp; sourceTree = "<group>"; };
+		E4370CC90F8590E100497FE2 /* NptNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptNetwork.h; sourceTree = "<group>"; };
+		E4370CCA0F8590E100497FE2 /* NptQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptQueue.cpp; sourceTree = "<group>"; };
+		E4370CCB0F8590E100497FE2 /* NptQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptQueue.h; sourceTree = "<group>"; };
+		E4370CCC0F8590E100497FE2 /* NptReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptReferences.h; sourceTree = "<group>"; };
+		E4370CCD0F8590E100497FE2 /* NptResults.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptResults.cpp; sourceTree = "<group>"; };
+		E4370CCE0F8590E100497FE2 /* NptResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptResults.h; sourceTree = "<group>"; };
+		E4370CCF0F8590E100497FE2 /* NptRingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptRingBuffer.cpp; sourceTree = "<group>"; };
+		E4370CD00F8590E100497FE2 /* NptRingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptRingBuffer.h; sourceTree = "<group>"; };
+		E4370CD10F8590E100497FE2 /* NptSelectableMessageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptSelectableMessageQueue.h; sourceTree = "<group>"; };
+		E4370CD20F8590E100497FE2 /* NptSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptSerialPort.h; sourceTree = "<group>"; };
+		E4370CD30F8590E100497FE2 /* NptSimpleMessageQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptSimpleMessageQueue.cpp; sourceTree = "<group>"; };
+		E4370CD40F8590E100497FE2 /* NptSimpleMessageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptSimpleMessageQueue.h; sourceTree = "<group>"; };
+		E4370CD50F8590E100497FE2 /* NptSockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptSockets.cpp; sourceTree = "<group>"; };
+		E4370CD60F8590E100497FE2 /* NptSockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptSockets.h; sourceTree = "<group>"; };
+		E4370CD70F8590E100497FE2 /* NptStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptStack.h; sourceTree = "<group>"; };
+		E4370CD80F8590E100497FE2 /* NptStreams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStreams.cpp; sourceTree = "<group>"; };
+		E4370CD90F8590E100497FE2 /* NptStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptStreams.h; sourceTree = "<group>"; };
+		E4370CDA0F8590E100497FE2 /* NptStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStrings.cpp; sourceTree = "<group>"; };
+		E4370CDB0F8590E100497FE2 /* NptStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptStrings.h; sourceTree = "<group>"; };
+		E4370CDC0F8590E100497FE2 /* NptSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptSystem.cpp; sourceTree = "<group>"; };
+		E4370CDD0F8590E100497FE2 /* NptSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptSystem.h; sourceTree = "<group>"; };
+		E4370CDE0F8590E100497FE2 /* NptThreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptThreads.cpp; sourceTree = "<group>"; };
+		E4370CDF0F8590E100497FE2 /* NptThreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptThreads.h; sourceTree = "<group>"; };
+		E4370CE00F8590E100497FE2 /* NptTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptTime.cpp; sourceTree = "<group>"; };
+		E4370CE10F8590E100497FE2 /* NptTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptTime.h; sourceTree = "<group>"; };
+		E4370CE20F8590E100497FE2 /* NptTls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptTls.cpp; sourceTree = "<group>"; };
+		E4370CE30F8590E100497FE2 /* NptTls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptTls.h; sourceTree = "<group>"; };
+		E4370CE40F8590E100497FE2 /* NptTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptTypes.h; sourceTree = "<group>"; };
+		E4370CE50F8590E100497FE2 /* NptUri.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptUri.cpp; sourceTree = "<group>"; };
+		E4370CE60F8590E100497FE2 /* NptUri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptUri.h; sourceTree = "<group>"; };
+		E4370CE70F8590E100497FE2 /* NptUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptUtils.cpp; sourceTree = "<group>"; };
+		E4370CE80F8590E100497FE2 /* NptUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptUtils.h; sourceTree = "<group>"; };
+		E4370CE90F8590E100497FE2 /* NptVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptVersion.h; sourceTree = "<group>"; };
+		E4370CEA0F8590E100497FE2 /* NptXml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptXml.cpp; sourceTree = "<group>"; };
+		E4370CEB0F8590E100497FE2 /* NptXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptXml.h; sourceTree = "<group>"; };
+		E4370CEC0F8590E100497FE2 /* NptZip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptZip.cpp; sourceTree = "<group>"; };
+		E4370CED0F8590E100497FE2 /* NptZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptZip.h; sourceTree = "<group>"; };
+		E4370CEE0F8590E100497FE2 /* NptLogging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptLogging.cpp; sourceTree = "<group>"; };
+		E4370CF10F8590E100497FE2 /* NptBsdNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptBsdNetwork.cpp; sourceTree = "<group>"; };
+		E4370CF20F8590E100497FE2 /* NptBsdSockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptBsdSockets.cpp; sourceTree = "<group>"; };
+		E4370CFF0F8590E100497FE2 /* NptPosixDynamicLibraries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixDynamicLibraries.cpp; sourceTree = "<group>"; };
+		E4370D000F8590E100497FE2 /* NptPosixNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixNetwork.cpp; sourceTree = "<group>"; };
+		E4370D010F8590E100497FE2 /* NptPosixQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixQueue.cpp; sourceTree = "<group>"; };
+		E4370D020F8590E100497FE2 /* NptPosixSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixSystem.cpp; sourceTree = "<group>"; };
+		E4370D030F8590E100497FE2 /* NptPosixThreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixThreads.cpp; sourceTree = "<group>"; };
+		E4370D040F8590E100497FE2 /* NptSelectableMessageQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptSelectableMessageQueue.cpp; sourceTree = "<group>"; };
+		E4370D050F8590E100497FE2 /* NptPosixFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixFile.cpp; sourceTree = "<group>"; };
+		E4370D100F8590E100497FE2 /* NptStdcConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStdcConsole.cpp; sourceTree = "<group>"; };
+		E4370D110F8590E100497FE2 /* NptStdcDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStdcDebug.cpp; sourceTree = "<group>"; };
+		E4370D120F8590E100497FE2 /* NptStdcEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStdcEnvironment.cpp; sourceTree = "<group>"; };
+		E4370D130F8590E100497FE2 /* NptStdcFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStdcFile.cpp; sourceTree = "<group>"; };
+		E4E0E0490F85B8DF00653B9D /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
+		FC72B0380C2649DB00A26466 /* IPSStatusBarWifiNone.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSStatusBarWifiNone.tif; sourceTree = "<group>"; };
+		FC72B0390C2649DB00A26466 /* IPSStatusBarWifiFull.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSStatusBarWifiFull.tif; sourceTree = "<group>"; };
+		FC72B03A0C2649DB00A26466 /* IPSStatusBarServiceFull.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSStatusBarServiceFull.tif; sourceTree = "<group>"; };
+		FC72B03B0C2649DB00A26466 /* IPSStatusBarServiceNone.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSStatusBarServiceNone.tif; sourceTree = "<group>"; };
+		FC72B03C0C2649DB00A26466 /* IPSStatusBarBatteryFull.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSStatusBarBatteryFull.tif; sourceTree = "<group>"; };
+		FC72D1090C28DE6400A26466 /* IPSIPhone_Landscape.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSIPhone_Landscape.tif; sourceTree = "<group>"; };
+		FCF94BFD0C25B3CF00F78F31 /* IPSStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSStatusBarView.h; sourceTree = "<group>"; };
+		FCF94BFE0C25B3CF00F78F31 /* IPSStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSStatusBarView.m; sourceTree = "<group>"; };
+		FCF94E580C25B71700F78F31 /* IPSScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSScreenView.h; sourceTree = "<group>"; };
+		FCF94E590C25B71700F78F31 /* IPSScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSScreenView.m; sourceTree = "<group>"; };
+		FCF94E780C25BE1D00F78F31 /* IPSWebContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSWebContainerView.h; sourceTree = "<group>"; };
+		FCF94E790C25BE1D00F78F31 /* IPSWebContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSWebContainerView.m; sourceTree = "<group>"; };
+		FCF94E9B0C25C26D00F78F31 /* IPSWebAddressBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSWebAddressBarView.h; sourceTree = "<group>"; };
+		FCF94E9C0C25C26D00F78F31 /* IPSWebAddressBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSWebAddressBarView.m; sourceTree = "<group>"; };
+		FCF94EA20C25C30700F78F31 /* IPSWebAddressBarBackground.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebAddressBarBackground.tif; sourceTree = "<group>"; };
+		FCF94EA40C25C33C00F78F31 /* IPSStatusBarWebBackground.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSStatusBarWebBackground.tif; sourceTree = "<group>"; };
+		FCF94ED30C25C41000F78F31 /* IPSWebToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSWebToolbarView.h; sourceTree = "<group>"; };
+		FCF94ED40C25C41000F78F31 /* IPSWebToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSWebToolbarView.m; sourceTree = "<group>"; };
+		FCF94ED60C25C43600F78F31 /* IPSWebToolbarBackground.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebToolbarBackground.tif; sourceTree = "<group>"; };
+		FCF94F3F0C25C97500F78F31 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		FCF951A30C25EDF600F78F31 /* IPSWebAddressBarPlusButton.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebAddressBarPlusButton.tif; sourceTree = "<group>"; };
+		FCF951FD0C25EF6000F78F31 /* IPSWebAddressBarReloadButton.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebAddressBarReloadButton.tif; sourceTree = "<group>"; };
+		FCF953210C25F33F00F78F31 /* IPSWebAddressField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSWebAddressField.h; sourceTree = "<group>"; };
+		FCF953220C25F33F00F78F31 /* IPSWebAddressField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSWebAddressField.m; sourceTree = "<group>"; };
+		FCF9539A0C25F8D400F78F31 /* IPSWebAddressFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSWebAddressFieldCell.h; sourceTree = "<group>"; };
+		FCF9539B0C25F8D400F78F31 /* IPSWebAddressFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSWebAddressFieldCell.m; sourceTree = "<group>"; };
+		FCF954220C25FD3700F78F31 /* IPSWebAddressFieldBackground.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebAddressFieldBackground.tif; sourceTree = "<group>"; };
+		FCF954550C25FF0000F78F31 /* IPSWebAddressFieldLeftCap.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebAddressFieldLeftCap.tif; sourceTree = "<group>"; };
+		FCF954570C25FF0B00F78F31 /* IPSWebAddressFieldRightCap.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebAddressFieldRightCap.tif; sourceTree = "<group>"; };
+		FCF954910C26029800F78F31 /* IPSIPhoneOffIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = IPSIPhoneOffIcon.icns; sourceTree = "<group>"; };
+		FCF954930C2602AA00F78F31 /* IPSIPhoneOnIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = IPSIPhoneOnIcon.icns; sourceTree = "<group>"; };
+		FCF954C80C2603D700F78F31 /* IPSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSApplication.h; sourceTree = "<group>"; };
+		FCF954C90C2603D700F78F31 /* IPSApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSApplication.m; sourceTree = "<group>"; };
+		FCF955D00C261ED000F78F31 /* IPSWebToolbarForwardButton.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebToolbarForwardButton.tif; sourceTree = "<group>"; };
+		FCF955D10C261ED000F78F31 /* IPSWebToolbarBookmarksButton.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebToolbarBookmarksButton.tif; sourceTree = "<group>"; };
+		FCF955D20C261ED000F78F31 /* IPSWebToolbarScreensButton.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebToolbarScreensButton.tif; sourceTree = "<group>"; };
+		FCF955D30C261ED000F78F31 /* IPSWebToolbarBackButton.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = IPSWebToolbarBackButton.tif; sourceTree = "<group>"; };
+		FCF956000C26204A00F78F31 /* IPSWebAddressBarTitleField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSWebAddressBarTitleField.h; sourceTree = "<group>"; };
+		FCF956010C26204A00F78F31 /* IPSWebAddressBarTitleField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSWebAddressBarTitleField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				FCF94F400C25C97500F78F31 /* WebKit.framework in Frameworks */,
+				BBBE65400C281A6D008DC24C /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E4370C9D0F8590C900497FE2 /* Neptune */,
+				FCF954C80C2603D700F78F31 /* IPSApplication.h */,
+				FCF954C90C2603D700F78F31 /* IPSApplication.m */,
+				653FD62F0C20D46400F475B5 /* IPSController.h */,
+				653FD6300C20D46400F475B5 /* IPSController.mm */,
+				653FDF990C2340C800F475B5 /* IPSCategories.h */,
+				653FDF9A0C2340C800F475B5 /* IPSCategories.m */,
+				FCF9560C0C2620AE00F78F31 /* Screen & Status Bar */,
+				FCF9560B0C26209400F78F31 /* Web Container */,
+				FCF9560A0C26208000F78F31 /* Window & View */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				BBBE653F0C281A6D008DC24C /* Quartz.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCF94F3F0C25C97500F78F31 /* WebKit.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* DemoGod.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* iPhoney */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = iPhoney;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* iPhoney_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E4E0E0490F85B8DF00653B9D /* home.html */,
+				A3963BBE0C318E7100450806 /* UserDefaults.plist */,
+				653FE1FF0C23424F00F475B5 /* Images */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				BBBE679D0C2829DA008DC24C /* iPhoneComposition.qtz */,
+				BB25A5F20C2AD4FA0034C5B1 /* iPhoneCompositionToP.qtz */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		653FE1FF0C23424F00F475B5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A3963BC00C318E9D00450806 /* IPSWebAddressBarLoadingBackground.tif */,
+				BB1F75060C31DCE60046A2D9 /* IPSIPhone.tif */,
+				BB1F75070C31DCE60046A2D9 /* IPSWebAddressBarStopButton.tif */,
+				A3963BC10C318E9D00450806 /* IPSWebAddressFieldLoadingLeftCap.tif */,
+				A3963BC20C318E9D00450806 /* IPSWebAddressFieldLoadingRightCap.tif */,
+				653FE2000C23424F00F475B5 /* IPSIPhone_Portrait.tif */,
+				FC72D1090C28DE6400A26466 /* IPSIPhone_Landscape.tif */,
+				FCF94EA20C25C30700F78F31 /* IPSWebAddressBarBackground.tif */,
+				FCF94EA40C25C33C00F78F31 /* IPSStatusBarWebBackground.tif */,
+				FCF94ED60C25C43600F78F31 /* IPSWebToolbarBackground.tif */,
+				FCF951A30C25EDF600F78F31 /* IPSWebAddressBarPlusButton.tif */,
+				FCF951FD0C25EF6000F78F31 /* IPSWebAddressBarReloadButton.tif */,
+				FCF954220C25FD3700F78F31 /* IPSWebAddressFieldBackground.tif */,
+				FCF954550C25FF0000F78F31 /* IPSWebAddressFieldLeftCap.tif */,
+				FCF954570C25FF0B00F78F31 /* IPSWebAddressFieldRightCap.tif */,
+				FCF955D00C261ED000F78F31 /* IPSWebToolbarForwardButton.tif */,
+				FCF955D10C261ED000F78F31 /* IPSWebToolbarBookmarksButton.tif */,
+				FCF955D20C261ED000F78F31 /* IPSWebToolbarScreensButton.tif */,
+				FCF955D30C261ED000F78F31 /* IPSWebToolbarBackButton.tif */,
+				FC72B0380C2649DB00A26466 /* IPSStatusBarWifiNone.tif */,
+				FC72B0390C2649DB00A26466 /* IPSStatusBarWifiFull.tif */,
+				FC72B03A0C2649DB00A26466 /* IPSStatusBarServiceFull.tif */,
+				FC72B03B0C2649DB00A26466 /* IPSStatusBarServiceNone.tif */,
+				FC72B03C0C2649DB00A26466 /* IPSStatusBarBatteryFull.tif */,
+				FCF954910C26029800F78F31 /* IPSIPhoneOffIcon.icns */,
+				FCF954930C2602AA00F78F31 /* IPSIPhoneOnIcon.icns */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E4370C9D0F8590C900497FE2 /* Neptune */ = {
+			isa = PBXGroup;
+			children = (
+				E4370CA80F8590E100497FE2 /* Core */,
+				E4370CEF0F8590E100497FE2 /* System */,
+			);
+			name = Neptune;
+			sourceTree = "<group>";
+		};
+		E4370CA80F8590E100497FE2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E4370CA90F8590E100497FE2 /* Neptune.cpp */,
+				E4370CAA0F8590E100497FE2 /* Neptune.h */,
+				E4370CAB0F8590E100497FE2 /* NptArray.h */,
+				E4370CAC0F8590E100497FE2 /* NptBase64.cpp */,
+				E4370CAD0F8590E100497FE2 /* NptBase64.h */,
+				E4370CAE0F8590E100497FE2 /* NptBufferedStreams.cpp */,
+				E4370CAF0F8590E100497FE2 /* NptBufferedStreams.h */,
+				E4370CB00F8590E100497FE2 /* NptCommon.cpp */,
+				E4370CB10F8590E100497FE2 /* NptCommon.h */,
+				E4370CB20F8590E100497FE2 /* NptConfig.h */,
+				E4370CB30F8590E100497FE2 /* NptConsole.cpp */,
+				E4370CB40F8590E100497FE2 /* NptConsole.h */,
+				E4370CB50F8590E100497FE2 /* NptConstants.h */,
+				E4370CB60F8590E100497FE2 /* NptDataBuffer.cpp */,
+				E4370CB70F8590E100497FE2 /* NptDataBuffer.h */,
+				E4370CB80F8590E100497FE2 /* NptDebug.cpp */,
+				E4370CB90F8590E100497FE2 /* NptDebug.h */,
+				E4370CBA0F8590E100497FE2 /* NptDefs.h */,
+				E4370CBB0F8590E100497FE2 /* NptDynamicLibraries.cpp */,
+				E4370CBC0F8590E100497FE2 /* NptDynamicLibraries.h */,
+				E4370CBD0F8590E100497FE2 /* NptFile.cpp */,
+				E4370CBE0F8590E100497FE2 /* NptFile.h */,
+				E4370CBF0F8590E100497FE2 /* NptHttp.cpp */,
+				E4370CC00F8590E100497FE2 /* NptHttp.h */,
+				E4370CC10F8590E100497FE2 /* NptInterfaces.h */,
+				E4370CC20F8590E100497FE2 /* NptList.cpp */,
+				E4370CC30F8590E100497FE2 /* NptList.h */,
+				E4370CC40F8590E100497FE2 /* NptLogging.h */,
+				E4370CC50F8590E100497FE2 /* NptMap.h */,
+				E4370CC60F8590E100497FE2 /* NptMessaging.cpp */,
+				E4370CC70F8590E100497FE2 /* NptMessaging.h */,
+				E4370CC80F8590E100497FE2 /* NptNetwork.cpp */,
+				E4370CC90F8590E100497FE2 /* NptNetwork.h */,
+				E4370CCA0F8590E100497FE2 /* NptQueue.cpp */,
+				E4370CCB0F8590E100497FE2 /* NptQueue.h */,
+				E4370CCC0F8590E100497FE2 /* NptReferences.h */,
+				E4370CCD0F8590E100497FE2 /* NptResults.cpp */,
+				E4370CCE0F8590E100497FE2 /* NptResults.h */,
+				E4370CCF0F8590E100497FE2 /* NptRingBuffer.cpp */,
+				E4370CD00F8590E100497FE2 /* NptRingBuffer.h */,
+				E4370CD10F8590E100497FE2 /* NptSelectableMessageQueue.h */,
+				E4370CD20F8590E100497FE2 /* NptSerialPort.h */,
+				E4370CD30F8590E100497FE2 /* NptSimpleMessageQueue.cpp */,
+				E4370CD40F8590E100497FE2 /* NptSimpleMessageQueue.h */,
+				E4370CD50F8590E100497FE2 /* NptSockets.cpp */,
+				E4370CD60F8590E100497FE2 /* NptSockets.h */,
+				E4370CD70F8590E100497FE2 /* NptStack.h */,
+				E4370CD80F8590E100497FE2 /* NptStreams.cpp */,
+				E4370CD90F8590E100497FE2 /* NptStreams.h */,
+				E4370CDA0F8590E100497FE2 /* NptStrings.cpp */,
+				E4370CDB0F8590E100497FE2 /* NptStrings.h */,
+				E4370CDC0F8590E100497FE2 /* NptSystem.cpp */,
+				E4370CDD0F8590E100497FE2 /* NptSystem.h */,
+				E4370CDE0F8590E100497FE2 /* NptThreads.cpp */,
+				E4370CDF0F8590E100497FE2 /* NptThreads.h */,
+				E4370CE00F8590E100497FE2 /* NptTime.cpp */,
+				E4370CE10F8590E100497FE2 /* NptTime.h */,
+				E4370CE20F8590E100497FE2 /* NptTls.cpp */,
+				E4370CE30F8590E100497FE2 /* NptTls.h */,
+				E4370CE40F8590E100497FE2 /* NptTypes.h */,
+				E4370CE50F8590E100497FE2 /* NptUri.cpp */,
+				E4370CE60F8590E100497FE2 /* NptUri.h */,
+				E4370CE70F8590E100497FE2 /* NptUtils.cpp */,
+				E4370CE80F8590E100497FE2 /* NptUtils.h */,
+				E4370CE90F8590E100497FE2 /* NptVersion.h */,
+				E4370CEA0F8590E100497FE2 /* NptXml.cpp */,
+				E4370CEB0F8590E100497FE2 /* NptXml.h */,
+				E4370CEC0F8590E100497FE2 /* NptZip.cpp */,
+				E4370CED0F8590E100497FE2 /* NptZip.h */,
+				E4370CEE0F8590E100497FE2 /* NptLogging.cpp */,
+			);
+			name = Core;
+			path = Neptune/Source/Core;
+			sourceTree = "<group>";
+		};
+		E4370CEF0F8590E100497FE2 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				E4370CF00F8590E100497FE2 /* Bsd */,
+				E4370CFE0F8590E100497FE2 /* Posix */,
+				E4370D0F0F8590E100497FE2 /* StdC */,
+			);
+			name = System;
+			path = Neptune/Source/System;
+			sourceTree = "<group>";
+		};
+		E4370CF00F8590E100497FE2 /* Bsd */ = {
+			isa = PBXGroup;
+			children = (
+				E4370CF10F8590E100497FE2 /* NptBsdNetwork.cpp */,
+				E4370CF20F8590E100497FE2 /* NptBsdSockets.cpp */,
+			);
+			path = Bsd;
+			sourceTree = "<group>";
+		};
+		E4370CFE0F8590E100497FE2 /* Posix */ = {
+			isa = PBXGroup;
+			children = (
+				E4370CFF0F8590E100497FE2 /* NptPosixDynamicLibraries.cpp */,
+				E4370D000F8590E100497FE2 /* NptPosixNetwork.cpp */,
+				E4370D010F8590E100497FE2 /* NptPosixQueue.cpp */,
+				E4370D020F8590E100497FE2 /* NptPosixSystem.cpp */,
+				E4370D030F8590E100497FE2 /* NptPosixThreads.cpp */,
+				E4370D040F8590E100497FE2 /* NptSelectableMessageQueue.cpp */,
+				E4370D050F8590E100497FE2 /* NptPosixFile.cpp */,
+			);
+			path = Posix;
+			sourceTree = "<group>";
+		};
+		E4370D0F0F8590E100497FE2 /* StdC */ = {
+			isa = PBXGroup;
+			children = (
+				E4370D100F8590E100497FE2 /* NptStdcConsole.cpp */,
+				E4370D110F8590E100497FE2 /* NptStdcDebug.cpp */,
+				E4370D120F8590E100497FE2 /* NptStdcEnvironment.cpp */,
+				E4370D130F8590E100497FE2 /* NptStdcFile.cpp */,
+			);
+			path = StdC;
+			sourceTree = "<group>";
+		};
+		FCF9560A0C26208000F78F31 /* Window & View */ = {
+			isa = PBXGroup;
+			children = (
+				BBBE65B40C282439008DC24C /* IPSAnimationWindow.h */,
+				BBBE65B50C282439008DC24C /* IPSAnimationWindow.m */,
+				653FD6350C20D47900F475B5 /* IPSWindow.h */,
+				653FD6360C20D47900F475B5 /* IPSWindow.m */,
+				653FDF390C233E2F00F475B5 /* IPSView.h */,
+				653FDF3A0C233E2F00F475B5 /* IPSView.m */,
+				BB14E25D0C303C6100687DD2 /* IPSScroller.h */,
+				BB14E25E0C303C6100687DD2 /* IPSScroller.m */,
+			);
+			name = "Window & View";
+			sourceTree = "<group>";
+		};
+		FCF9560B0C26209400F78F31 /* Web Container */ = {
+			isa = PBXGroup;
+			children = (
+				FCF94E780C25BE1D00F78F31 /* IPSWebContainerView.h */,
+				FCF94E790C25BE1D00F78F31 /* IPSWebContainerView.m */,
+				FCF94E9B0C25C26D00F78F31 /* IPSWebAddressBarView.h */,
+				FCF94E9C0C25C26D00F78F31 /* IPSWebAddressBarView.m */,
+				FCF956000C26204A00F78F31 /* IPSWebAddressBarTitleField.h */,
+				FCF956010C26204A00F78F31 /* IPSWebAddressBarTitleField.m */,
+				FCF953210C25F33F00F78F31 /* IPSWebAddressField.h */,
+				FCF953220C25F33F00F78F31 /* IPSWebAddressField.m */,
+				FCF9539A0C25F8D400F78F31 /* IPSWebAddressFieldCell.h */,
+				FCF9539B0C25F8D400F78F31 /* IPSWebAddressFieldCell.m */,
+				FCF94ED30C25C41000F78F31 /* IPSWebToolbarView.h */,
+				FCF94ED40C25C41000F78F31 /* IPSWebToolbarView.m */,
+			);
+			name = "Web Container";
+			sourceTree = "<group>";
+		};
+		FCF9560C0C2620AE00F78F31 /* Screen & Status Bar */ = {
+			isa = PBXGroup;
+			children = (
+				FCF94E580C25B71700F78F31 /* IPSScreenView.h */,
+				FCF94E590C25B71700F78F31 /* IPSScreenView.m */,
+				FCF94BFD0C25B3CF00F78F31 /* IPSStatusBarView.h */,
+				FCF94BFE0C25B3CF00F78F31 /* IPSStatusBarView.m */,
+			);
+			name = "Screen & Status Bar";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* DemoGod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "DemoGod" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				A33BF4850C31DE9500A2C4A7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoGod;
+			productInstallPath = "$(HOME)/Applications";
+			productName = iPhoney;
+			productReference = 8D1107320486CEB800E47090 /* DemoGod.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DemoGod" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* iPhoney */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* DemoGod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				653FE2010C23424F00F475B5 /* IPSIPhone_Portrait.tif in Resources */,
+				FCF94EA30C25C30700F78F31 /* IPSWebAddressBarBackground.tif in Resources */,
+				FCF94EA50C25C33C00F78F31 /* IPSStatusBarWebBackground.tif in Resources */,
+				FCF94ED70C25C43600F78F31 /* IPSWebToolbarBackground.tif in Resources */,
+				FCF951A40C25EDF600F78F31 /* IPSWebAddressBarPlusButton.tif in Resources */,
+				FCF951FE0C25EF6000F78F31 /* IPSWebAddressBarReloadButton.tif in Resources */,
+				FCF954230C25FD3700F78F31 /* IPSWebAddressFieldBackground.tif in Resources */,
+				FCF954560C25FF0000F78F31 /* IPSWebAddressFieldLeftCap.tif in Resources */,
+				FCF954580C25FF0B00F78F31 /* IPSWebAddressFieldRightCap.tif in Resources */,
+				FCF954920C26029800F78F31 /* IPSIPhoneOffIcon.icns in Resources */,
+				FCF954940C2602AA00F78F31 /* IPSIPhoneOnIcon.icns in Resources */,
+				FCF955D40C261ED000F78F31 /* IPSWebToolbarForwardButton.tif in Resources */,
+				FCF955D50C261ED000F78F31 /* IPSWebToolbarBookmarksButton.tif in Resources */,
+				FCF955D60C261ED000F78F31 /* IPSWebToolbarScreensButton.tif in Resources */,
+				FCF955D70C261ED000F78F31 /* IPSWebToolbarBackButton.tif in Resources */,
+				FC72B03D0C2649DB00A26466 /* IPSStatusBarWifiNone.tif in Resources */,
+				FC72B03E0C2649DB00A26466 /* IPSStatusBarWifiFull.tif in Resources */,
+				FC72B03F0C2649DB00A26466 /* IPSStatusBarServiceFull.tif in Resources */,
+				FC72B0400C2649DB00A26466 /* IPSStatusBarServiceNone.tif in Resources */,
+				FC72B0410C2649DB00A26466 /* IPSStatusBarBatteryFull.tif in Resources */,
+				BBBE679E0C2829DA008DC24C /* iPhoneComposition.qtz in Resources */,
+				FC72D10A0C28DE6400A26466 /* IPSIPhone_Landscape.tif in Resources */,
+				BB25A5F30C2AD4FA0034C5B1 /* iPhoneCompositionToP.qtz in Resources */,
+				A3963BBF0C318E7100450806 /* UserDefaults.plist in Resources */,
+				A3963BC30C318E9D00450806 /* IPSWebAddressBarLoadingBackground.tif in Resources */,
+				A3963BC40C318E9D00450806 /* IPSWebAddressFieldLoadingLeftCap.tif in Resources */,
+				A3963BC50C318E9D00450806 /* IPSWebAddressFieldLoadingRightCap.tif in Resources */,
+				BB1F75080C31DCE60046A2D9 /* IPSIPhone.tif in Resources */,
+				BB1F75090C31DCE60046A2D9 /* IPSWebAddressBarStopButton.tif in Resources */,
+				E4E0E04A0F85B8DF00653B9D /* home.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				653FD6310C20D46400F475B5 /* IPSController.mm in Sources */,
+				653FD6370C20D47900F475B5 /* IPSWindow.m in Sources */,
+				653FDF3B0C233E2F00F475B5 /* IPSView.m in Sources */,
+				653FDF9B0C2340C800F475B5 /* IPSCategories.m in Sources */,
+				FCF94BFF0C25B3CF00F78F31 /* IPSStatusBarView.m in Sources */,
+				FCF94E5A0C25B71700F78F31 /* IPSScreenView.m in Sources */,
+				FCF94E7A0C25BE1D00F78F31 /* IPSWebContainerView.m in Sources */,
+				FCF94E9D0C25C26D00F78F31 /* IPSWebAddressBarView.m in Sources */,
+				FCF94ED50C25C41000F78F31 /* IPSWebToolbarView.m in Sources */,
+				FCF953230C25F33F00F78F31 /* IPSWebAddressField.m in Sources */,
+				FCF9539C0C25F8D400F78F31 /* IPSWebAddressFieldCell.m in Sources */,
+				FCF954CA0C2603D700F78F31 /* IPSApplication.m in Sources */,
+				FCF956020C26204A00F78F31 /* IPSWebAddressBarTitleField.m in Sources */,
+				BBBE65B60C282439008DC24C /* IPSAnimationWindow.m in Sources */,
+				BB14E25F0C303C6100687DD2 /* IPSScroller.m in Sources */,
+				E4370D650F8590E100497FE2 /* Neptune.cpp in Sources */,
+				E4370D660F8590E100497FE2 /* NptBase64.cpp in Sources */,
+				E4370D670F8590E100497FE2 /* NptBufferedStreams.cpp in Sources */,
+				E4370D680F8590E100497FE2 /* NptCommon.cpp in Sources */,
+				E4370D690F8590E100497FE2 /* NptConsole.cpp in Sources */,
+				E4370D6A0F8590E100497FE2 /* NptDataBuffer.cpp in Sources */,
+				E4370D6B0F8590E100497FE2 /* NptDebug.cpp in Sources */,
+				E4370D6C0F8590E100497FE2 /* NptDynamicLibraries.cpp in Sources */,
+				E4370D6D0F8590E100497FE2 /* NptFile.cpp in Sources */,
+				E4370D6E0F8590E100497FE2 /* NptHttp.cpp in Sources */,
+				E4370D6F0F8590E100497FE2 /* NptList.cpp in Sources */,
+				E4370D700F8590E100497FE2 /* NptMessaging.cpp in Sources */,
+				E4370D710F8590E100497FE2 /* NptNetwork.cpp in Sources */,
+				E4370D720F8590E100497FE2 /* NptQueue.cpp in Sources */,
+				E4370D730F8590E100497FE2 /* NptResults.cpp in Sources */,
+				E4370D740F8590E100497FE2 /* NptRingBuffer.cpp in Sources */,
+				E4370D750F8590E100497FE2 /* NptSimpleMessageQueue.cpp in Sources */,
+				E4370D760F8590E100497FE2 /* NptSockets.cpp in Sources */,
+				E4370D770F8590E100497FE2 /* NptStreams.cpp in Sources */,
+				E4370D780F8590E100497FE2 /* NptStrings.cpp in Sources */,
+				E4370D790F8590E100497FE2 /* NptSystem.cpp in Sources */,
+				E4370D7A0F8590E100497FE2 /* NptThreads.cpp in Sources */,
+				E4370D7B0F8590E100497FE2 /* NptTime.cpp in Sources */,
+				E4370D7C0F8590E100497FE2 /* NptTls.cpp in Sources */,
+				E4370D7D0F8590E100497FE2 /* NptUri.cpp in Sources */,
+				E4370D7E0F8590E100497FE2 /* NptUtils.cpp in Sources */,
+				E4370D7F0F8590E100497FE2 /* NptXml.cpp in Sources */,
+				E4370D800F8590E100497FE2 /* NptZip.cpp in Sources */,
+				E4370D810F8590E100497FE2 /* NptLogging.cpp in Sources */,
+				E4370D820F8590E100497FE2 /* NptBsdNetwork.cpp in Sources */,
+				E4370D830F8590E100497FE2 /* NptBsdSockets.cpp in Sources */,
+				E4370D8C0F8590E100497FE2 /* NptPosixDynamicLibraries.cpp in Sources */,
+				E4370D8D0F8590E100497FE2 /* NptPosixNetwork.cpp in Sources */,
+				E4370D8E0F8590E100497FE2 /* NptPosixQueue.cpp in Sources */,
+				E4370D8F0F8590E100497FE2 /* NptPosixSystem.cpp in Sources */,
+				E4370D900F8590E100497FE2 /* NptPosixThreads.cpp in Sources */,
+				E4370D910F8590E100497FE2 /* NptSelectableMessageQueue.cpp in Sources */,
+				E4370D920F8590E100497FE2 /* NptPosixFile.cpp in Sources */,
+				E4370D9A0F8590E100497FE2 /* NptStdcConsole.cpp in Sources */,
+				E4370D9B0F8590E100497FE2 /* NptStdcDebug.cpp in Sources */,
+				E4370D9C0F8590E100497FE2 /* NptStdcEnvironment.cpp in Sources */,
+				E4370D9D0F8590E100497FE2 /* NptStdcFile.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = DemoGod;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = DemoGod;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "DemoGod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DemoGod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
