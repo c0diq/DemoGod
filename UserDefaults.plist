@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IPSEnablePlugins</key>
+	<true/>
+	<key>IPSCustomUserAgent</key>
+	<string>Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A538a Safari/419.3</string>
+	<key>IPSUsesiPhoneUserAgent</key>
+	<false/>
+	<key>IPSUsesCustomUserAgent</key>
+	<false/>
+	<key>IPSUsesWebKitUserAgent</key>
+	<true/>
+</dict>
+</plist>
