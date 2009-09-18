@@ -233,6 +233,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -270,20 +272,22 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>FCF9560C0C2620AE00F78F31</string>
-								<string>FCF9560A0C26208000F78F31</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>089C165CFE840E0CC02AAC07</string>
 								<string>29B97318FDCFA39411CA2CEA</string>
+								<string>29B97323FDCFA39411CA2CEA</string>
+								<string>1058C7A0FEA54F0111CA2CBB</string>
+								<string>1058C7A2FEA54F0111CA2CBB</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>1</integer>
+									<integer>23</integer>
+									<integer>22</integer>
+									<integer>15</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -318,14 +322,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>IPSController.mm</string>
+								<string>InfoPlist.strings</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -333,11 +335,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>IPSController.mm</string>
+										<string>InfoPlist.strings</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>E4A3DC1B1062267F004F0475</string>
+										<string>E4A3DC2C1062A3C6004F0475</string>
 										<key>history</key>
 										<array>
 											<string>E4A598400F85EAC900F9D8C0</string>
@@ -354,12 +356,12 @@
 											<string>E4A54DF4103917BA0051411A</string>
 											<string>E4A54DF5103917BA0051411A</string>
 											<string>E4A54E13103918820051411A</string>
-											<string>E4A54E3C10391C150051411A</string>
 											<string>E4A54E3D10391C150051411A</string>
 											<string>E4A54E6A10391F710051411A</string>
 											<string>E4D2C69F103A9EEE00A594F8</string>
 											<string>E4D2C6A0103A9EEE00A594F8</string>
-											<string>E4A3DBA210621ECB004F0475</string>
+											<string>E4A3DC2A1062A3C6004F0475</string>
+											<string>E4A54E3C10391C150051411A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -382,6 +384,7 @@
 											<string>E4A54E4110391C150051411A</string>
 											<string>E4A54E4210391C150051411A</string>
 											<string>E4D2C6A3103A9EEE00A594F8</string>
+											<string>E4A3DC2B1062A3C6004F0475</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
